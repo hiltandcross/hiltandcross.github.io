@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
   <title>
     The Hilt and Cross
   </title>
@@ -18,10 +19,16 @@
 <body>
   <section class="hero">
     <img src="assets\HCSeal.png" alt="An image of the Seal of the Hilt and Cross" />
-
   </section>
 
-  <section class="hema">
+  <section class="navbar">
+    <a href="#hema">HEMA</a>
+    <a href="#instructor">Instructor</a>
+    <a href="#practice">Location</a>
+    <a href="#contact">Contact</a>
+  </section>
+
+  <section class="hema" id="hema">
     <div class="card">
       <h3>What is HEMA?</h3>
       <p>HEMA, or Historical European Martial Arts, is martial art and sport that seeks to revive the lost martial
@@ -35,7 +42,7 @@
     </div>
   </section>
 
-  <section class="instructor">
+  <section class="instructor" id="instructor">
     <div class="img-wrapper">
       <img src="assets\Ben.jpg" alt="An image of Ben in historical clothing">
     </div>
@@ -61,7 +68,7 @@
 
   </section>
 
-  <section class="practice">
+  <section class="practice" id="practice">
     <div class="card">
       <h3>Practice Time and Locations</h3>
       <p>We meet at ABU games in The Courtyard room, which is in the back at the end of the hall.</p>
@@ -72,17 +79,35 @@
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
 
-    <h4>Join the Hilt & Cross</h4>
+    <h1>Join The Hilt & Cross</h1>
 
-    <p>Join us on <a
-        href="https://patreon.com/TheHiltandCrossSchoolofHistoricalEuropeanMartialArts?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link">Patreon</a>!
-    </p>
+    <div class="card">
 
-    <h4>Contact</h4>
+      <div class="contact-method">
+        <i class="mdi mdi-sword icon-big"></i>
+        <p>
+          Join us on <a
+            href="https://patreon.com/TheHiltandCrossSchoolofHistoricalEuropeanMartialArts?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link">Patreon</a>!
+        </p>
+      </div>
 
-    <p>Chat with us on <a href="https://discord.gg/hvnAxmvtKA">Discord</a>.</p>
+      <div class="contact-method">
+        <i class="mdi mdi-sword-cross icon-big"></i>
+        <p>
+          Chat with us on <a href="https://discord.gg/hvnAxmvtKA">Discord</a>!
+        </p>
+      </div>
+
+      <div class="contact-method">
+        <i class="mdi mdi-shield-sword icon-big"></i>
+        <p>
+          Email the <a href="mailto:benjohsmi@gmail.com">instructor</a>!
+        </p>
+      </div>
+    </div>
+
   </section>
 
 </body>
