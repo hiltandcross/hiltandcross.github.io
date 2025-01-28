@@ -1,0 +1,82 @@
+:root {
+    --main-bg-color: rgb(68, 68, 148);
+    --light-text-color: rgb(243, 243, 243);
+}
+
+body {
+    margin: 0px;
+    font-family: 'Bitter', serif;
+}
+
+section {
+    padding: 2em;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+
+    img {
+        width: 10vw;
+    }
+
+}
+
+.hema {
+    background-image: url('../assets/benandrandy.jpg');
+    background-size: cover;
+    background-position: center 35%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+
+    .card {
+
+        color: var(--light-text-color);
+        text-shadow: black 1px 1px 2px;
+    }
+}
+
+.card {
+    padding: 1em;
+    max-width: 50vw;
+    border-radius: 10px;
+    box-shadow: rgb(63, 63, 63) 1px 1px 2px;
+    background-color: rgba(95, 95, 85, 0.5);
+    backdrop-filter: blur(4px);
+
+    h3 {
+        margin: 0px;
+    }
+}
+
+.instructor {
+    display: flex;
+    gap: 1em;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    color: var(--light-text-color);
+    text-shadow: black 1px 1px 2px;
+
+    img {
+        width: 25vw;
+        clip-path: circle(40%);
+    }
+
+    .about-instructor {
+        width: 60%;
+    }
+}
+
+.practice {
+    background-image: url('../assets/andrewandjohn.png');
+    background-size: cover;
+    background-position: center 35%;
+    display: flex;
+    justify-content: center;
+    color: var(--light-text-color);
+    text-align: center;
+    text-shadow: black 1px 1px 2px;
+}
