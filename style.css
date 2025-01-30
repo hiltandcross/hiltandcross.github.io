@@ -21,15 +21,17 @@ a {
     display: flex;
     justify-content: center;
     background-color: var(--main-bg-color);
+    padding: 1em;
 
     img {
-        width: 10vw;
+        width: 20vw;
     }
+
 
 }
 
 .hema {
-    background-image: url('../assets/benandrandy.jpg');
+    background-image: url('../assets/benandrandycompressed.jpg');
     background-size: cover;
     background-position: center 35%;
     display: flex;
@@ -42,6 +44,10 @@ a {
 
         color: var(--light-text-color);
         text-shadow: black 1px 1px 2px;
+    }
+
+    p {
+        text-indent: 2em;
     }
 }
 
@@ -72,13 +78,23 @@ a {
         clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     }
 
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        gap: 1em;
+
+        img {
+            width: 60vw;
+        }
+
+    }
+
     .about-instructor {
         width: 60%;
     }
 }
 
 .practice {
-    background-image: url('../assets/andrewandjohn.png');
+    background-image: url('../assets/AndrewandJohncompressed.jpg');
     background-size: cover;
     background-position: center 35%;
     display: flex;
@@ -94,7 +110,11 @@ a {
     background-color: var(--main-bg-color);
     color: var(--light-text-color);
     text-shadow: black 1px 1px 2px;
-    width: 100vw;
+
+
+    a:hover {
+        color: rgb(121, 183, 237);
+    }
 }
 
 .contact {
@@ -120,4 +140,8 @@ a {
 
 .icon-big {
     font-size: 4em;
+}
+
+.anchor {
+    scroll-behavior: smooth;
 }
