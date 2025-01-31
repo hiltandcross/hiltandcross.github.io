@@ -14,17 +14,17 @@ section {
 
 a {
     color: var(--light-text-color);
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 a:hover {
     color: rgb(121, 183, 237);
+    text-decoration: none;
 }
 
 .hero {
     display: flex;
     justify-content: center;
-    background-color: var(--main-bg-color);
     padding: 1em;
 
     img {
@@ -39,7 +39,6 @@ a:hover {
     background-size: cover;
     background-position: center 35%;
     display: flex;
-    flex-direction: column;
     gap: 1em;
     justify-content: center;
     align-items: center;
@@ -55,6 +54,12 @@ a:hover {
     }
 }
 
+.hema-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .card {
     padding: 1em;
     max-width: 50vw;
@@ -62,6 +67,7 @@ a:hover {
     box-shadow: rgb(63, 63, 63) 1px 1px 2px;
     background-color: rgba(95, 95, 85, 0.5);
     backdrop-filter: blur(4px);
+    text-align: center;
 
     h3 {
         margin: 0px;
@@ -118,9 +124,7 @@ a:hover {
     background-color: var(--main-bg-color);
     color: var(--light-text-color);
     text-shadow: black 1px 1px 2px;
-
-
-
+    padding: 1em;
 }
 
 .contact {
@@ -131,10 +135,15 @@ a:hover {
     .card {
         background-color: var(--main-bg-color);
         color: var(--light-text-color);
+        padding: 2em;
+
+        h1 {
+            margin-bottom: 2em;
+        }
     }
 
-    a {
-        text-decoration: underline;
+    img {
+        width: 40vw;
     }
 }
 
@@ -142,6 +151,7 @@ a:hover {
     display: flex;
     gap: 1em;
     align-items: center;
+    text-decoration: none;
 }
 
 .icon-big {
@@ -150,4 +160,12 @@ a:hover {
 
 .anchor {
     scroll-behavior: smooth;
+}
+
+.join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
 }
