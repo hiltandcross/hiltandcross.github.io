@@ -54,6 +54,13 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .hema {
+        flex-direction: column;
+    }
+
+}
+
 .hema-info {
     display: flex;
     flex-direction: column;
@@ -116,6 +123,11 @@ a:hover {
     color: var(--light-text-color);
     text-align: center;
     text-shadow: black 1px 1px 2px;
+
+    .card {
+        background-color: rgba(95, 95, 85, 0.747);
+        backdrop-filter: blur(4px);
+    }
 }
 
 .navbar {
@@ -125,6 +137,9 @@ a:hover {
     color: var(--light-text-color);
     text-shadow: black 1px 1px 2px;
     padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .contact {
@@ -145,6 +160,14 @@ a:hover {
     img {
         width: 40vw;
     }
+
+}
+
+@media screen and (max-width: 800px) {
+    .contact {
+        flex-direction: column;
+    }
+
 }
 
 .contact-method {
@@ -168,4 +191,9 @@ a:hover {
     justify-content: center;
     align-items: center;
     padding: 1em;
+}
+
+.schedule {
+    font-size: large;
+    font-weight: bold;
 }
