@@ -34,6 +34,15 @@ a:hover {
 
 }
 
+@media screen and (max-width: 800px) {
+    .hero {
+        img {
+            width: 50vw;
+        }
+    }
+
+}
+
 .hema {
     background-image: url('../assets/BenandRandyCompressed.png');
     background-size: cover;
