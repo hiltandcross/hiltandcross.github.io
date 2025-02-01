@@ -185,6 +185,9 @@ a:hover {
         flex-direction: column;
     }
 
+    img {
+        width: 50vw;
+    }
 }
 
 .contact-method {
