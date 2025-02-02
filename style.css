@@ -1,7 +1,7 @@
 :root {
     --main-bg-color: rgb(17, 88, 121);
     --light-text-color: rgb(243, 243, 243);
-    --dark-text-color: rgb(36, 181, 249);
+    --subtle-text-color: rgb(36, 181, 249);
 }
 
 body {
@@ -17,7 +17,7 @@ footer {
     bottom: 0;
 
     a {
-        color: var(--dark-text-color);
+        color: var(--subtle-text-color);
     }
 }
 
@@ -169,7 +169,7 @@ a:hover {
 }
 
 .icon-big {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .anchor {
