@@ -11,7 +11,8 @@ body {
 footer {
     background-color: var(--main-bg-color);
     color: var(--light-text-color);
-    text-align: end;
+    text-align: center;
+    font-size: small;
     padding: 1em;
     bottom: 0;
 }
@@ -42,15 +43,6 @@ a:hover {
 
 }
 
-@media screen and (max-width: 800px) {
-    .hero {
-        img {
-            width: 50vw;
-        }
-    }
-
-}
-
 .hema {
     background-image: url('../assets/BenandRandyCompressed.png');
     background-size: cover;
@@ -69,13 +61,6 @@ a:hover {
     p {
         text-indent: 2em;
     }
-}
-
-@media screen and (max-width: 800px) {
-    .hema {
-        flex-direction: column;
-    }
-
 }
 
 .hema-info {
@@ -116,20 +101,12 @@ a:hover {
         text-indent: 2em;
     }
 
-    @media screen and (max-width: 800px) {
-        flex-direction: column;
-        gap: 1em;
-
-        img {
-            width: 60vw;
-        }
-
-    }
 
     .about-instructor {
         width: 60%;
     }
 }
+
 
 .practice {
     background-image: url('../assets/AndrewandJohncompressed.jpg');
@@ -180,16 +157,6 @@ a:hover {
 
 }
 
-@media screen and (max-width: 800px) {
-    .contact {
-        flex-direction: column;
-    }
-
-    img {
-        width: 50vw;
-    }
-}
-
 .contact-method {
     display: flex;
     gap: 1em;
@@ -216,4 +183,42 @@ a:hover {
 .schedule {
     font-size: large;
     font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    .hero {
+        img {
+            width: 50vw;
+        }
+    }
+
+    .hema {
+        flex-direction: column;
+    }
+
+    .instructor {
+        flex-direction: column;
+        gap: 1em;
+
+        img {
+            width: 60vw;
+        }
+
+        .about-instructor {
+            width: 80%;
+        }
+    }
+
+    .contact {
+        flex-direction: column;
+
+        img {
+            width: 60vw;
+        }
+    }
+
+    .card {
+        width: 60vw;
+    }
+
 }
